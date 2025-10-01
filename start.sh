@@ -32,8 +32,8 @@ else
 fi
 echo "What is your server address? (with port)"
 read ADDRESS
-sed -i "s|\${SERVERADDRESS}|ws://$ADDRESS|g" game.html
-sed -i "s|\${SERVERADDRESS}|ws://$ADDRESS|g" wasm.html
+sed -i "s|\${SERVERADDRESS}|ws://147.185.221.211:47412|g" game.html
+sed -i "s|\${SERVERADDRESS}|ws://147.185.221.211:47412|g" wasm.html
 surge . $DOMAIN
 rm game.html
 rm wasm.html
